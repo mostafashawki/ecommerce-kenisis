@@ -29,7 +29,7 @@ aws --endpoint-url=http://localhost:4566 kinesis create-stream --stream-name my-
 1. Install dependencies for the Order Service:
 ```bash
 cd order-service
-npm install
+yarn install
 ```
 
 2. Run the Order Service locally using Serverless Offline:
@@ -79,7 +79,7 @@ aws --endpoint-url=http://localhost:4566 kinesis get-records --shard-iterator sh
 1. Install dependencies for the Product Service:
 ```bash
 cd product-service
-npm install
+yarn install
 ```
 
 2. Invoke the Product Service function locally using Serverless:
