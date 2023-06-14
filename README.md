@@ -1,4 +1,4 @@
-# E-Commerce Services Example using AWS Lambda & Kenisis
+# E-Commerce Services Example using AWS Lambda & kinesis
 
 This is a sample application that demonstrates the communication between two Lambda services using AWS Kinesis. The Order Service receives HTTP POST requests to create new orders, and it produces events to a Kinesis stream. The Product Service consumes the events and updates the product quantity in a DynamoDB table.
 
