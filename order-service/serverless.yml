@@ -1,0 +1,28 @@
+service: order-service
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: eu-central-1
+
+functions:
+  order:
+    handler: app.handler
+    events:
+      - http:
+          path: order
+          method: post
+          cors: true
+    environment:
+      STREAM_NAME: my-stream
+      STREAM_ARN: arn:aws:kinesis:eu-central-1:000000000000:stream/my-stream
+      REGION: eu-central-1
+      ENDPOINT: http://localhost:4566
+
+plugins:
+  - serverless-offline
+
+custom:
+  serverless-offline:
+    httpPort: 3005
+    lambdaPort: 3006

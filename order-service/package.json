@@ -1,0 +1,13 @@
+{
+  "name": "order-service",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "Mostafa Shawki",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-kinesis": "^3.352.0"
+  },
+  "devDependencies": {
+    "serverless-offline": "^12.0.4"
+  }
+}
